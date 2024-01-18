@@ -33,7 +33,7 @@ function draw() {
 
 ## Turning off the draw loop
 
-To turn off the draw loop, add the noLoop() function to the setup() function.
+To turn off the draw loop, add the noLoop() function to the draw() function.
 
 ```javascript
 function draw() {
@@ -78,6 +78,9 @@ To set the color of the circle, use the fill() function. You can simply type in 
 function draw() {
     // turn off the draw loop
     noLoop();
+
+    // turn off the default stroke
+    noStroke();
 
     // set the fill color to red
     fill("red");
@@ -139,5 +142,146 @@ Now we're going to draw multiple rows and columns of circles. We're going to use
         circleX = 50;
         // move down to the next row
         circleY += 100;
+    }
+```
+
+## Save image
+
+To save an image of the sketch, use the saveCanvas() function. The first parameter is the name of the file, and the second parameter is the file type. The file type can be "jpg", "png", or "gif".
+
+We'll place a button element with an ID of "saveCanvas" in the HTML file. Then we'll add an event listener to the button in the sketch.js file.
+
+```html
+<button id="saveCanvas">Save canvas</button>
+```
+
+```javascript
+// add this at the bottom of sketch.js
+
+// add an event listener to the saveCanvas button
+document.getElementById("saveCanvas").addEventListener("click", function() {
+    // save the canvas as a png file
+    saveCanvas("ist363-circles", "png");
+});
+```
+
+## Gap between circles
+
+To add a gap between the circles, we'll add 10px to the x and y coordinates of the circle. But let's refactor our code to include more variables.
+
+```javascript
+    // place the variables at the top of your sketch.js file
+    let circleX = 50;
+    let circleY = 50;
+    let circleRadius = 50;
+    let circleDiameter = circleRadius * 2;
+    let circleGap = 10;
+
+    // draw 10 rows
+    for (let i = 0; i < 10; i++) {
+        // draw 10 columns
+        for (let j = 0; j < 10; j++) {
+            circle(circleX, circleY, circleRadius);
+            circleX += (circleDiameter + circleGap);
+        }
+        // after each row is complete, reset the x position
+        circleX = 50;
+        // after each row is complete, move down to the next row by adding the circle radius, gap, and diameter
+        circleY += (circleDiameter + circleGap);
+    }
+```
+
+## Introducing randomness
+
+To add some randomness to the circles, we'll use the random() function. The first parameter is the minimum value, and the second parameter is the maximum value. The random() function will return a random number between the minimum and maximum values.
+
+```javascript
+    // draw 10 rows
+    for (let i = 0; i < 10; i++) {
+        // draw 10 columns
+        for (let j = 0; j < 10; j++) {
+            // add some randomness to the circle radius
+            circleRadius = random(10, 100);
+            circle(circleX, circleY, circleRadius);
+            circleX += (circleDiameter + circleGap);
+        }
+        // after each row is complete, reset the x position
+        circleX = 50;
+        // after each row is complete, move down to the next row by adding the circle radius, gap, and diameter
+        circleY += (circleDiameter + circleGap);
+    }
+```
+
+## Random color
+
+To add some randomness to the circle color, we'll use the random() function again. But this time, we'll use the random() function to generate a random number between 0 and 255 for the red, green, and blue values.
+
+```javascript
+    // draw 10 rows
+    for (let i = 0; i < 10; i++) {
+        // draw 10 columns
+        for (let j = 0; j < 10; j++) {
+            // add some randomness to the circle radius
+            circleRadius = random(10, 100);
+            // add some randomness to the circle color
+            const randomRed = random(0, 255);
+            const randomGreen = random(0, 255);
+            const randomBlue = random(0, 255);
+            const randomAlpha = random(0, 255);
+            fill(randomRed, randomGreen, randomBlue, randomAlpha);
+
+            circle(circleX, circleY, circleRadius);
+
+            circleX += (circleDiameter + circleGap);
+        }
+        // after each row is complete, reset the x position
+        circleX = 50;
+        // after each row is complete, move down to the next row by adding the circle radius, gap, and diameter
+        circleY += (circleDiameter + circleGap);
+    }
+```
+
+## Global variable management
+
+```javascript
+const canvasWidth = 800;
+const canvasHeight = 800;
+
+const totalColumns =  10;
+const totalRows = 10;
+let gap = 10;
+
+let circleRadius = 50;
+
+// calculate the offset to center the circles
+// the offset is the difference between the canvas width and the total width of the circles (plus the gaps)
+let startX = (canvasWidth - (totalColumns * circleRadius) - (totalColumns * gap))/2;
+let startY = (canvasHeight - (totalRows * circleRadius) - (totalRows * gap))/2;
+```
+
+Update the loop to use startX and startY as reset values.
+
+```javascript
+    // draw 10 rows
+    for (let i = 0; i < totalColumns; i++) {
+        // draw 10 columns
+        for (let j = 0; j < totalRows; j++) {
+            // add some randomness to the circle radius
+            circleRadius = random(10, 100);
+            // add some randomness to the circle color
+            const randomRed = random(0, 255);
+            const randomGreen = random(0, 255);
+            const randomBlue = random(0, 255);
+            const randomAlpha = random(0, 255);
+            fill(randomRed, randomGreen, randomBlue, randomAlpha);
+
+            circle(circleX, circleY, circleRadius);
+
+            circleX += (circleDiameter + circleGap);
+        }
+        // after each row is complete, reset the x position
+        circleX = 50;
+        // after each row is complete, move down to the next row by adding the circle radius, gap, and diameter
+        circleY += (circleDiameter + circleGap);
     }
 ```
