@@ -10,6 +10,15 @@ I've read and completed exercises from Daniel Shiffman's "The Nature of Code" bo
 
 p5.js is a JavaScript library that makes coding accessible for artists, designers, educators, and beginners. It's easy to learn and use, and it's free.
 
+## Resources
+
+- [p5.js website](https://p5js.org/)
+- [Nature of Code](https://nature-of-code-2nd-edition.netlify.app/) 2nd edition by Daniel Shiffman. This book is available for free online.
+- [Learning Processing](http://learningprocessing.com/) by Daniel Shiffman.
+- [Make: Getting Started with p5.js](https://www.amazon.com/Make-Getting-Started-p5-js-Interactive/dp/1457186772) by Lauren McCarthy, Casey Reas, and Ben Fry.
+- [The Coding Train](https://thecodingtrain.com/) Website and YouTube channel by Daniel Shiffman.
+- [Processing Foundation](https://processingfoundation.org/) Website for the Processing Foundation.
+
 ## First steps
 
 - Create a new project folder "circles" and add an index.html file. Utilize the "!" shortcut in VS Code to create the basic HTML structure.
@@ -17,6 +26,11 @@ p5.js is a JavaScript library that makes coding accessible for artists, designer
 - Download the p5.min.js library file from https://p5js.org/download/ and add it to the js folder.
 - Add a script tag to the body of the HTML file to link to the p5.min.js library.
 - Add a script tag to the body of the HTML file to link to a new sketch.js file in the js folder.
+
+```html
+<script src="js/p5.min.js"></script>
+<script src="js/sketch.js"></script>
+```
 
 ## p5.js sketch basics
 
@@ -31,9 +45,17 @@ function draw() {
 }
 ```
 
+## What is a function?
+
+A function is a block of code that performs a specific task. Functions are used to organize code into logical blocks, and they can be reused throughout the code.
+
+## What is a comment?
+
+A comment is a line of code that is not executed. Comments are used to explain code and make it easier to understand. Comments are ignored by the browser.
+
 ## Turning off the draw loop
 
-To turn off the draw loop, add the noLoop() function to the draw() function.
+To turn off the default draw loop, add the noLoop() function to the draw() function.
 
 ```javascript
 function draw() {
@@ -42,7 +64,7 @@ function draw() {
 }
 ```
 
-## Canvas
+## Set up the canvas
 
 ```javascript
 function setup() {
@@ -56,7 +78,7 @@ function setup() {
 ```
 
 
-## Circle
+## Draw a circle
 
 To draw a circle, use the circle() function. The first two parameters are the x and y coordinates of the center of the circle. The third parameter is the radius.
 
@@ -65,7 +87,7 @@ function draw() {
     // turn off the draw loop
     noLoop();
 
-    // draw a circle at x = 300, y = 300, with a radius of 100
+    // translation: draw a circle at x = 300, y = 300, with a radius of 100
     circle(300, 300, 100);
 }
 ```
@@ -241,7 +263,7 @@ To add some randomness to the circle color, we'll use the random() function agai
     }
 ```
 
-## Global variable management
+## Global variable management and refactoring
 
 ```javascript
 const canvasWidth = 800;
@@ -285,3 +307,11 @@ Update the loop to use startX and startY as reset values.
         circleY += (circleDiameter + circleGap);
     }
 ```
+
+## Conclusion
+
+In this lesson, we learned how to create a p5.js sketch, how to draw a circle, how to use a for loop to draw multiple circles, how to save an image of the sketch, how to add a gap between the circles, and how to add randomness to the circles.
+
+With informal sketches like these, you'll be surprised on how it can become a foundation for diving into more advanced and creative coding projects and a springboard into higher level programming concepts like object-oriented programming, game development, and data visualization.
+
+
