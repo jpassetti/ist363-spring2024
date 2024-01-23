@@ -26,7 +26,7 @@ The setup() function is called once when the program starts. It's used to define
 
 The draw() function is called directly after setup() and it's used to continuously execute the lines of code contained inside its block until the program is stopped or noLoop() is called.
 
-## Refactoring with objects
+## 3. Refactoring with objects
 
 An object is a collection of properties, and a property is an association between a name (or key) and a value.
 
@@ -40,7 +40,7 @@ var circle = {
 };
 ```
 
-## 3. How do we draw a circle?
+## 4. How do we draw a circle?
 
 We can use p5.js's circle() function to draw a circle. The circle() function takes three parameters: x, y, and diameter. 
 
@@ -53,7 +53,7 @@ var circle = {
 circle(circle.x, circle.y, circle.diameter);
 ```
 
-## Be random
+## 5. Be random
 
 We can use the random() function to generate random numbers. The random() function takes two parameters: min and max. 
 
@@ -66,7 +66,7 @@ var circle = {
 circle(circle.x, circle.y, circle.diameter);
 ```
 
-## Refactoring with a class
+## 6. Refactoring with a class
 
 A __class__ is a blueprint for creating objects with pre-defined properties and methods. Classes are usually stored in separate files and then imported into the HTML file.
 
@@ -97,7 +97,7 @@ In your html file, you need to add a script element for the circle class:
 <script src="js/sketch2.js"></script>
 ```
 
-## Refactoring with arrays
+## 7. Refactoring with arrays
 
 An array is a collection of elements. Each element in an array is assigned a number, called its index. The first element is at index 0, the second element is at index 1, and so on.
 
@@ -108,7 +108,7 @@ const colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
 fill(colors[0]); // red
 ```
 
-## Array of objects
+## 8. Array of objects
 
 Arrays not only hold numbers and strings, but also objects. Arrays have a length property that tells you how many elements are in the array, and you can use this to loop over the array.
 
@@ -126,7 +126,7 @@ for (let i = 0; i < circles.length; i++) {
 }
 ```
 
-## Refactoring by creating circles in the setup() function
+## 9. Refactoring by creating circles in the setup() function
 
 Let the computer do the work for you. We can create circles dynamically in the setup() function.
 
@@ -164,7 +164,7 @@ function draw() {
 }
 ```
 
-## Add life by animating the diameter
+## 10. Add life by animating the diameter
 
 Before we draw each circle, we can update its diameter. We can do this by adding a new update() method to the Circle class.
 
@@ -233,7 +233,7 @@ class Circle {
 }
 ```
 
-## More challenges
+## 11. More challenges
 
 Adding life to your sketch is a great way to make it more interesting. Here are some challenges to try:
 
