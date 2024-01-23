@@ -45,7 +45,12 @@ var circle = {
 We can use p5.js's circle() function to draw a circle. The circle() function takes three parameters: x, y, and diameter. 
 
 ```javascript
-
+var circle = {
+    x: 100,
+    y: 100,
+    diameter: 50
+};
+circle(circle.x, circle.y, circle.diameter);
 ```
 
 ## Be random
@@ -92,7 +97,7 @@ In your html file, you need to add a script element for the circle class:
 <script src="js/sketch2.js"></script>
 ```
 
-## Rafactoring with arrays
+## Refactoring with arrays
 
 An array is a collection of elements. Each element in an array is assigned a number, called its index. The first element is at index 0, the second element is at index 1, and so on.
 
@@ -108,7 +113,7 @@ fill(colors[0]); // red
 Arrays not only hold numbers and strings, but also objects. Arrays have a length property that tells you how many elements are in the array, and you can use this to loop over the array.
 
 ```javascript
-// manually create an array of circles, we'll refactor this later
+// manually create an array of circles (yes, it's tedious, we'll refactor this later)
 const circles = [
     new Circle(100, 100, 50),
     new Circle(200, 200, 50),
@@ -122,6 +127,9 @@ for (let i = 0; i < circles.length; i++) {
 ```
 
 ## Refactoring by creating circles in the setup() function
+
+Let the computer do the work for you. We can create circles dynamically in the setup() function.
+
 
 ```javascript
 const totalCircles = 100;
@@ -158,7 +166,7 @@ function draw() {
 
 ## Add life by animating the diameter
 
-Before we draw each circle, we need to update its diameter. We can do this by adding a new update() method to the Circle class.
+Before we draw each circle, we can update its diameter. We can do this by adding a new update() method to the Circle class.
 
 ```javascript
 class Circle {
@@ -208,10 +216,10 @@ class Circle {
 
         // if the circle state is growing, increase the diameter
         if (this.isGrowing) {
-            this.diameter += .5;
+            this.diameter += 1;
         } else {
             // otherwise, decrease the diameter
-            this.diameter -= .5;
+            this.diameter -= 1;
         }
         // if the diameter is greater than the max diameter, stop growing
         if (this.diameter > maxDiameter) {
