@@ -177,6 +177,7 @@ Taking a sketch further is a great way to learn. Here are some ideas to take thi
 - Add a button to change the speed of the circles
 - Add more shapes (triangle, square, rectangle, polygon)
 - Add more randomness to the circles (e.g. random color, random size, random speed, random direction)
+- Vary the speeds of the circles (e.g. some circles move faster than others)
 - Add a wiggle effect to the circles (e.g. move the circles left and right)
 - Include a stroke and no fill to the circles to make them look like bubbles
 - Include a variety of circles (some filled, some not filled, some with a stroke, some without a stroke)
