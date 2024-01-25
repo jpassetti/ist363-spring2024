@@ -1,10 +1,13 @@
 class Circle {
     constructor(x, y, diameter) {
         this.x = x;
+        this.originalX = x;
         this.y = y;
         this.diameter = diameter;
         this.isGrowing = true;
         this.isRising = true;
+        this.wiggleDirection = "right";
+        this.wiggleAmount = random(1, 30);
         this.color = null;
         this.colorFrom = color(0,14,84);
         this.colorTo = color(247,105,0);
@@ -54,6 +57,24 @@ class Circle {
         // bottom boundary: if the y value is greater than or equal to the canvas height minus the diameter/2, start rising
         if (this.y >= canvas.height - this.diameter/2) {
             this.isRising = true;
+        }
+
+        // wiggle direction: if the x value is less than or equal to the diameter/2, change the wiggle direction to "right"
+        if (this.x <= (this.originalX - this.wiggleAmount)) {
+            this.wiggleDirection = "right";
+        }
+        // if the x value is greater than or equal to the canvas width minus the diameter/2, change the wiggle direction to "left"
+        if (this.x >= (this.originalX + this.wiggleAmount)) {
+            this.wiggleDirection = "left";
+        }
+
+        // wiggle: if the wiggle direction is "right", increase the x value by 2
+        if (this.wiggleDirection === "right") {
+            this.x += 2;
+        }
+        // if the wiggle direction is "left", decrease the x value by 2
+        if (this.wiggleDirection === "left") {
+            this.x -= 2;
         }
     }
 }

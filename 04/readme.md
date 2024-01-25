@@ -174,10 +174,10 @@ Taking a sketch further is a great way to learn. Here are some ideas to take thi
 - Add a button to clear the canvas
 - Add a button to change the background color
 - Add a button to change the color of the circles
-- Add a button to change the min and max diameter of the circles
 - Add a button to change the speed of the circles
 - Add more shapes (triangle, square, rectangle, polygon)
 - Add more randomness to the circles (e.g. random color, random size, random speed, random direction)
 - Add a wiggle effect to the circles (e.g. move the circles left and right)
 - Include a stroke and no fill to the circles to make them look like bubbles
+- Include a variety of circles (some filled, some not filled, some with a stroke, some without a stroke)
 - Instead of pulsing the circle diameters, make them progressively enlarge as they get closer to the top of the canvas
