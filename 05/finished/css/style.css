@@ -1,0 +1,40 @@
+html, body, h1, h2, h3, h4, h5, h6, p, ul, li, a, button {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+body {
+    background-color: yellow;
+}
+header {
+    background-color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li {
+    list-style: none;
+    margin-right: 1rem;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 56, 92);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+}
+.overlay.active {
+    left: 0;
+}

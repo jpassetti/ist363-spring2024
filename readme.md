@@ -13,3 +13,6 @@
 
 ### 4: [Creative coding: Animation](04)
 * Session 4 (Thu 01/25): Adding animation on the Y axis, adding LERP color, adding a save image button, and adding interactivity with the mouse
+
+### 5: [Basic JavaScript](05)
+* Session 5 (Tue 01/30): This JavaScript lesson covers adding a header element and a menu button, creating a JS file, implementing a click event listener, and adding a function to toggle a class on the header element.
