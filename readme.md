@@ -17,5 +17,5 @@
 ### 5: [Basic JavaScript](05)
 * Session 5 (Tue 01/30): This JavaScript lesson covers adding a header element and a menu button, creating a JS file, implementing a click event listener, and adding a function to toggle a class on the overlay.
 
-### 6: [Review JS and CSS flexbox](05)
+### 6: [Review JS and CSS flexbox](06)
 * Session 6 (Thu 02/01): We'll review how we combined JS and CSS to create the mobile menu. We'll continue styling the header and overlay with CSS flexbox and CSS variables.

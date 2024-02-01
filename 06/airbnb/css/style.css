@@ -9,7 +9,9 @@ ul, li {
 * {
     box-sizing: border-box;
 }
-
+:root {
+   --airbnb-pink: #FF385C; 
+}
 body {
     background-color: yellow;
 }
@@ -20,12 +22,38 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-header h1 {
-    font-size: 2.5rem;
+.logo {
+    width: 150px;
+    height: auto;
+    fill: var(--airbnb-pink);   
 }
+
 nav ul {
     display: flex;
     gap: 1rem;
+}
+nav a {
+    font-family: Arial;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    transition: all .25s;
+}
+nav a:hover, nav a:focus {
+    color: var(--airbnb-pink);
+    text-decoration: underline;
+}
+.btn-ui {
+    padding: 1rem;
+    background-color: transparent;
+    border: 1px solid var(--airbnb-pink);
+    cursor: pointer;
+}
+.btn-ui svg {
+    width: 2rem;
+    height: auto;
+    fill: var(--airbnb-pink);
 }
 .overlay {
     width: 100vw;
