@@ -56,3 +56,49 @@ This file is used to configure Prettier for the project you're currently working
 This configuration sets Prettier to use semicolons, single quotes, and a tab width of 2 spaces. It also sets Prettier to use spaces instead of tabs for indentation.
 
 Don't worry, I can't memorize these options. The configuration options are documented on the [Prettier website](https://prettier.io/docs/en/options.html).
+
+### Install Node.js
+
+We'll be downloading node packages, so you'll need to have Node.js installed. You can download it from the [Node.js website](https://nodejs.org/en/).
+
+### npm
+
+npm is a package manager for JavaScript. It is used to install, manage, and update packages that are used in a project. It is also used to run scripts that are defined in a project's `package.json` file.
+
+It comes with Node.js, so if you've installed Node.js, you should have npm installed as well.
+
+Check to see if you have npm installed by running the following command in a terminal:
+
+```bash
+npm -v
+```
+
+### Linter
+
+A linter is a tool that is used to analyze code for potential errors. It is used to ensure that code is written in a way that is consistent with best practices and coding standards. This is important because it helps to identify and fix errors before they become problems.
+
+**ESLint** is a popular linter that is used to analyze JavaScript code. It is easy to use and can be integrated into VSCode.
+
+### Install ESLint VSCode Extension
+
+To install ESLint, open VSCode and click on the Extensions icon in the Activity Bar on the side of the window. Search for `ESLint` and click on the Install button.
+
+### Install ESLint npm Package
+
+To install ESLint, open a terminal and navigate to the root of your project. Then run the following command:
+
+```bash
+npm install eslint --save-dev
+```
+
+This will install ESLint as a development dependency in your project.
+
+### Initialize ESLint Configuration
+
+To initialize ESLint, run the following command in the terminal:
+
+```bash
+npx eslint --init
+```
+
+This will start a wizard that will guide you through the process of setting up ESLint for your project. You can choose to use a popular style guide, such as Airbnb, or you can choose to answer questions about your preferences for code style.
