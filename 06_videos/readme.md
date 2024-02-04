@@ -13,6 +13,8 @@
 - Download and install **Git**
 - Utilize Git and GitHub
 
+# Video 1: Prettier
+
 ### Development Environment
 
 A development environment is a set of tools and processes that are used to create software. It includes the tools used to write code, the tools used to test code, and the tools used to deploy code. A development environment can be as simple as a text editor and a web browser, or it can be as complex as a suite of tools that are used to create, test, and deploy software.
@@ -56,6 +58,8 @@ This file is used to configure Prettier for the project you're currently working
 This configuration sets Prettier to use semicolons, single quotes, and a tab width of 2 spaces. It also sets Prettier to use spaces instead of tabs for indentation.
 
 Don't worry, I can't memorize these options. The configuration options are documented on the [Prettier website](https://prettier.io/docs/en/options.html).
+
+# Video 2: ESLint
 
 ### Install Node.js
 
