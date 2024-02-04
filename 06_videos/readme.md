@@ -106,3 +106,107 @@ npx eslint --init
 ```
 
 This will start a wizard that will guide you through the process of setting up ESLint for your project. You can choose to use a popular style guide, such as Airbnb, or you can choose to answer questions about your preferences for code style.
+
+# Video 3: Git and Github
+
+**Git** is a version control system that is used to track changes in code. It is used to manage the history of a project, and it is used to collaborate with other developers.
+
+**GitHub** is a web-based platform that is used to host code repositories. It is used to store, manage, and share code with other developers.
+
+### Install Git
+
+To install Git, go to the [Git website](https://git-scm.com/) and download the version for your operating system. There are separate installers for Windows, macOS, and Linux. Follow the instructions to install Git on your computer.
+
+Note: We aren't using the Github Desktop application. We are using the command line interface (CLI) to interact with Git and Github.
+
+### Check git version
+
+To check if Git is installed, open a terminal and run the following command:
+
+```bash
+git --version
+```
+
+This will display the version of Git that is installed on your computer.
+
+### Create a New Repository on GitHub
+
+To create a new repository on GitHub, go to the [GitHub website](https://www.github.com) and log in. Then click on the `New` button in the top-right corner of the screen. This will open a form that you can use to create a new repository.
+
+Github gives you the commands to run in the terminal to initialize the repository and push your code to the repository.
+
+```bash
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin (paste the url from github)
+git push -u origin main
+```
+
+Translation: "Initialize the repository, add all the files to the staging area, commit the changes with a message, set the branch to main, add the remote repository, and push the changes to the remote repository."
+
+Note: when you run the push command, you will be prompted to enter your GitHub username and password. This authentication method is deprecated by GitHub, so we need to configure Git to use a Personal Access Token (PAT) instead of a password. We'll cover that in the next section.
+
+### Configure Git and Personal Access Token (PAT)
+
+GitHub has moved away from password authentication for Git operations. Since August 13, 2021, GitHub has required the use of token-based authentication, such as personal access tokens (PATs) or SSH keys, for all Git operations to increase security. Here's a step-by-step guide to resolve this issue:
+
+### Use a Personal Access Token (PAT) for HTTPS Git Operations
+
+Instead of using a password, you will need to create a Personal Access Token (PAT) on GitHub to use as a substitute for her GitHub password.
+
+### Steps to Create a PAT:
+
+1. **Log into GitHub account:** Go to the GitHub website and log in.
+2. **Access Settings:** Click on your profile icon in the top-right corner, then click "Settings."
+3. **Developer settings:** Scroll down to the bottom of the sidebar and click on "Developer settings."
+4. **Personal access tokens:** In the left sidebar, click on "Personal access tokens."
+5. **Generate new token:** Click on the "Generate new token" button.
+6. **Token description and expiration:** Give the token a descriptive name and optionally set an expiration date.
+7. **Select scopes:** Choose the scopes or permissions you want to grant this token. For basic repository operations, select repo.
+8. **Generate token:** Click the "Generate token" button at the bottom.
+
+After creating the token, make sure to copy it and store it securely; GitHub won't show it again.
+
+### Using the PAT
+
+Try pushing your code again.
+
+```bash
+git push -u origin main
+```
+
+You will be prompted to enter your GitHub username and password.
+
+Use the username as usual, but instead of the password, use the PAT created.
+
+### Configure Git to Remember the PAT
+
+To avoid entering the PAT each time, you can use the Git credential helper to store the PAT. Here's how to do it:
+
+```bash
+git config --global credential.helper store
+```
+
+After running this command, the next time Git prompts for a username and password, you should enter your GitHub username and the PAT as the password. Git will store these credentials, so they won't have to enter them for future operations.
+
+Refresh your browser and you should see your code in the repository on GitHub.
+
+# Using Git in the future
+
+When you make changes to your code, you can use the following commands to track and commit your changes:
+
+```bash
+git add .
+git commit -m "commit message"
+git push
+```
+
+Translation: "Add all the changes to the staging area, commit the changes with a message, and push the changes to the remote repository."
+
+You don't need to run `git init` again. You only need to run `git init` once, when you create a new repository.
+
+### Conclusion
+
+In this video series, we covered the importance of a development environment, the importance of a formatter, the importance of a linter, and the importance of a version control system. We also installed Prettier, ESLint, and Git, and we utilized Git and GitHub to store and share code.
