@@ -13,6 +13,12 @@
 - Download and install **Git**
 - Utilize Git and GitHub
 
+# Videos
+
+1. Dev Environment: Prettier (22 min) [https://youtu.be/5xGdFvNdvUU](https://youtu.be/5xGdFvNdvUU)
+1. ES Lint (24 min) [https://youtu.be/Il5_ooryZi0](https://youtu.be/Il5_ooryZi0)
+1. Git and Github (37 min) [https://youtu.be/u1Tjm-gY3yY](https://youtu.be/u1Tjm-gY3yY)
+
 # Video 1: Prettier
 
 ### Development Environment
