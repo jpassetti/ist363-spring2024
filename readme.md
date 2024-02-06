@@ -29,3 +29,7 @@
 ### 6 Videos: [Dev environment](06_videos)
 
 - In this video series, we'll improve our development environment by utilizing Prettier, ESLint, Git and Github.
+
+### 7: [Variables, objects, arrays](07)
+
+- Session 7 (Tues 02/06): We'll learn how to use JavaScript to create variables, objects and arrays, but also how to use them in a real-world example.
