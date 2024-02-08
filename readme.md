@@ -33,3 +33,7 @@
 ### 7: [Variables, objects, arrays](07)
 
 - Session 7 (Tues 02/06): We'll learn how to use JavaScript to create variables, objects and arrays, but also how to use them in a real-world example.
+
+### 8: [Fetch JSON](08)
+
+- Session 8 (Thu 02/08): In addition to reviewing variables, objects and arrays, we'll learn how to fetch a JSON file and use it in our project. And we'll learn how to filter the data.
