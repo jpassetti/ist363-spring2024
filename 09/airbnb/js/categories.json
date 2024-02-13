@@ -1,0 +1,82 @@
+[
+    {
+      "slug": "apartments",
+      "label": {
+        "plural": "Apartments",
+        "singular": "Apartment"
+      },
+      "description": "A self-contained unit that occupies only part of a building, available for residential purposes."
+    },
+    {
+      "slug": "houses",
+      "label": {
+        "plural": "Houses",
+        "singular": "House"
+      },
+      "description": "A dwelling that stands independently on its own land offering privacy and space."
+    },
+    {
+      "slug": "villas",
+      "label": {
+        "plural": "Villas",
+        "singular": "Villa"
+      },
+      "description": "An upscale and luxurious property, often in a picturesque or exclusive location."
+    },
+    {
+      "slug": "cabins",
+      "label": {
+        "plural": "Cabins",
+        "singular": "Cabin"
+      },
+      "description": "A small, rustic, and typically wooden shelter in a natural or remote setting."
+    },
+    {
+      "slug": "cottages",
+      "label": {
+        "plural": "Cottages",
+        "singular": "Cottage"
+      },
+      "description": "A charming and cozy dwelling, typically in a rural or semi-rural location."
+    },
+    {
+      "slug": "lofts",
+      "label": {
+        "plural": "Lofts",
+        "singular": "Loft"
+      },
+      "description": "A large, adaptable open space, often converted for residential use from a commercial or industrial building."
+    },
+    {
+      "slug": "studios",
+      "label": {
+        "plural": "Studios",
+        "singular": "Studio"
+      },
+      "description": "A small, one-room apartment typically consisting of a combined living, sleeping, and cooking space."
+    },
+    {
+      "slug": "bungalows",
+      "label": {
+        "plural": "Bungalows",
+        "singular": "Bungalow"
+      },
+      "description": "A low-built, single-story house, offering a simple and accessible living space."
+    },
+    {
+      "slug": "townhouses",
+      "label": {
+        "plural": "Townhouses",
+        "singular": "Townhouse"
+      },
+      "description": "A tall, narrow, traditional residence, usually multi-story, sharing one or more walls with adjacent properties."
+    },
+    {
+      "slug": "condos",
+      "label": {
+        "plural": "Condos",
+        "singular": "Condo"
+      },
+      "description": "A private residence within a larger building or complex, owned individually while common areas are shared."
+    }
+  ]
