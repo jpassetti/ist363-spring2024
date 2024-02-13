@@ -36,4 +36,8 @@
 
 ### 8: [Fetch JSON](08)
 
-- Session 8 (Thu 02/08): In addition to reviewing variables, objects and arrays, we'll learn how to fetch a JSON file and use it in our project. And we'll learn how to filter the data.
+- Session 8 (Thu 02/08): In addition to reviewing variables, objects and arrays, we'll learn how to fetch a JSON file and use it in our project. And we'll learn how to filter the data (time permitting).
+
+### 9: [Filter array of objects](09)
+
+- Session 9 (Tue 02/13): We'll learn how to use the .filter() method to filter an array of objects. We'll do a lot of refactoring and we'll learn how to use arrow function syntax, too.
