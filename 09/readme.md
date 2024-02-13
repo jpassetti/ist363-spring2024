@@ -136,6 +136,19 @@ Promise.all([
 
 Promise.all() takes an array of promises and waits for them all to resolve. Then it returns an array of the results.
 
+### Filter method
+
+The .filter() method creates a new array with all elements that pass the test implemented by the provided function. It's a great way to filter an array of objects. Here's an example:
+
+```javascript
+const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+
+const result = words.filter(word => word.length > 6);
+
+console.log(result);
+// expected output: Array ["exuberant", "destruction", "present"]
+```
+
 ### displayCategory function
 
 This function takes a category and an array of properties and displays them in the DOM. It's a simple example, but it should give you an idea of how to use the .filter() method to filter an array of objects.
@@ -154,7 +167,7 @@ function displayCategory(category, properties) {
   section.appendChild(title);
 
   // Filter properties for the current category
-  const filteredProperties = properties.filter(property => property.categoryId === category.id);
+  const filteredProperties = properties.filter(property => property.type === category.label.singular);
 
   // New approach: Create a string to hold the HTML
   let propertiesHTML = '';
