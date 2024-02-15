@@ -41,3 +41,7 @@
 ### 9: [Filter array of objects](09)
 
 - Session 9 (Tue 02/13): We'll learn how to use the .filter() method to filter an array of objects. We'll do a lot of refactoring and we'll learn how to use arrow function syntax, too.
+
+### 10: [Filter and sort](10)
+
+- Session 10 (Thu 02/15): We'll learn how to use the .filter() method to filter an array of objects based on category and the .sort() method to sort an array of objects by name or price.
