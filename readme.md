@@ -45,3 +45,7 @@
 ### 10: [Filter and sort](10)
 
 - Session 10 (Thu 02/15): We'll learn how to use the .filter() method to filter an array of objects based on category and the .sort() method to sort an array of objects by name or price.
+
+### 11: [Review filter and learn SASS](11)
+
+- Session 11 (Tue 02/20): We'll review how we used the .filter() method. We'll practice using the filter method with more examples and data. And time permitting, we'll also learn how to use SASS to create variables, nesting, partials and mixins. We'll most likely learn more SASS next class.
