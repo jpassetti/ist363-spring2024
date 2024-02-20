@@ -54,7 +54,7 @@ const cars = [
   { make: 'Ford', model: 'Taurus', year: 2015 },
   { make: 'Chevrolet', model: 'Impala', year: 2014 }
 ];
-// 2. Use the filter method to filter out all objects that have a property of 'make' equal to 'Ford'
+// 2. Use the filter method to include all objects that have a property of 'make' equal to 'Ford'
 // 3. Print the result to the console
 // expected result: [{ make: 'Ford', model: 'Fusion', year: 2019 }, { make: 'Ford', model: 'Focus', year: 2017 }, { make: 'Ford', model: 'Taurus', year: 2015 }]
 
