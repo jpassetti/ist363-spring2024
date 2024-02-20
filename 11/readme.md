@@ -210,14 +210,16 @@ nav {
 
 SASS partials are used to break up your SASS files into smaller, more maintainable files. This is a great way to organize your stylesheets and make them more manageable.
 
+Partial files are prefixed with an underscore `_` and are imported into your main SASS file.
+
 ```scss
-// _header.scss
+// File: _header.scss
 header {
   background-color: #000;
   color: white;
 }
 
-// _footer.scss
+// File: _footer.scss
 footer {
   background-color: #000;
   color: white;
@@ -226,7 +228,7 @@ footer {
 
 ### Import SASS partials
 
-You can import SASS partials into your main SASS file using the `@use` rule.
+You can import SASS partials into your main SASS file using the `@use` rule. You don't need to include the underscore `_` or the file extension `.scss`.
 
 ```scss
 // style.scss
