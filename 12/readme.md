@@ -12,7 +12,6 @@
 - [SASS Guidelines](https://sass-guidelin.es/)
 - [SASS 7-1 Pattern](https://sass-guidelin.es/#the-7-1-pattern)
 
-
 ### SASS instructions:
 
 1. Install SASS on your computer
@@ -27,17 +26,21 @@ SASS is a preprocessor scripting language that is interpreted or compiled into C
 
 1. Install Node.js on your computer (if you haven't already)
 2. Open a terminal and type the following command to install SASS globally on your computer
+
 ```bash
 npm install -g sass
 ```
 
 Translation: "Hey npm, install the SASS package globally on my computer".
 
-3. If you are using a Mac, you may need to use `sudo` to install SASS globally. This is because the global flag `-g` requires administrator privileges. 
+3. If you are using a Mac, you may need to use `sudo` to install SASS globally. This is because the global flag `-g` requires administrator privileges.
+
 ```bash
 sudo npm install -g sass
 ```
+
 4. Check to see if SASS was installed by typing the following command
+
 ```bash
 sass --version
 ```
@@ -53,6 +56,7 @@ To use SASS, you need to create a SASS file and compile it into a CSS file. Here
 ```bash
 sass --watch sass/style.scss:css/style.css
 ```
+
 Translation: "Hey sass, watch the style.scss file in the sass directory and compile it into a style.css file and place it into the css directory".
 
 The watch command syntax requires the input file and the output file. The input file is the SASS file and the output file is the CSS file.
@@ -68,14 +72,16 @@ Important: please remember the browser can't read SASS files, so you need to com
 To run both `http-server` and `SASS` simultaneously in a vanilla JavaScript project, you can utilize a package like `npm-run-all`. This tool allow you to run multiple commands concurrently from the same terminal window. Here's how you can set it up:
 
 1. Install npm-run-all
+
 ```bash
 npm install --save-dev npm-run-all
 ```
 
 2. Edit your package JSON file to include the following scripts:
+
 ```json
 "scripts": {
-  "start-server": "http-server .",
+  "start-server": "http-server -p 3000",
   "watch-sass": "sass --watch sass/style.scss:css/style.css",
   "start": "npm-run-all --parallel start-server watch-sass"
 }
@@ -126,7 +132,7 @@ SASS nesting is a way to nest CSS selectors within one another. This is a great 
 First, let's remember our HTML for the navigation:
 
 ```html
- <nav>
+<nav>
   <ul>
     <li>
       <a href="">Stays</a>
@@ -189,8 +195,8 @@ You can import SASS partials into your main SASS file using the `@use` rule. You
 
 ```scss
 // style.scss
-@use 'header';
-@use 'footer';
+@use "header";
+@use "footer";
 ```
 
 ### Improve folder and file structure
@@ -241,16 +247,16 @@ You can create an index file in each folder to import all of the SASS files in t
 
 ```scss
 // base/_index.scss
-@use 'reset';
-@use 'typography';
+@use "reset";
+@use "typography";
 ```
-  
-  ```scss
+
+```scss
 // components/_index.scss
-@use 'buttons';
-@use 'carousel';
-@use 'cover';
-@use 'dropdown';
+@use "buttons";
+@use "carousel";
+@use "cover";
+@use "dropdown";
 ```
 
 And repeat this process for each folder.
@@ -263,12 +269,12 @@ Your style.scss file becomes a table of contents, importing all of the SASS file
 
 ```scss
 // style.scss
-@use 'vendor';
-@use 'base';
-@use 'components';
-@use 'layout';
-@use 'pages';
-@use 'themes';
+@use "vendor";
+@use "base";
+@use "components";
+@use "layout";
+@use "pages";
+@use "themes";
 ```
 
 #### Mixins
@@ -285,7 +291,7 @@ SASS mixins are used to store a group of CSS declarations that you want to reuse
 
 // then import the mixins and use it in a file
 // base/_base.scss
-@use 'abstracts/mixins';
+@use "abstracts/mixins";
 
 body {
   @include mixins.fontProperties();
@@ -299,22 +305,19 @@ Mixins can write code for you. For example, you can write a mixin that includes 
 ```scss
 // abstracts/_mixins.scss
 @mixin breakpoint($size) {
-  @if $size == 'phone' {
+  @if $size == "phone" {
     @media (max-width: 699px) {
       @content;
     }
-  }
-  @else if $size == 'tablet' {
+  } @else if $size == "tablet" {
     @media (min-width: 700px) and (max-width: 1023px) {
       @content;
     }
-  }
-  @else if $size == 'laptop' {
+  } @else if $size == "laptop" {
     @media (min-width: 1024px) and (max-width: 1139px) {
       @content;
     }
-  }
-  @else if $size == 'desktop' {
+  } @else if $size == "desktop" {
     @media (min-width: 1140px) {
       @content;
     }
@@ -322,7 +325,7 @@ Mixins can write code for you. For example, you can write a mixin that includes 
 }
 
 // components/_container.scss
-@use 'abstracts/mixins';
+@use "abstracts/mixins";
 
 .container {
   width: 100%;
@@ -340,11 +343,9 @@ Mixins can write code for you. For example, you can write a mixin that includes 
 }
 ```
 
-
 ### Conclusion:
 
 By utilizing SASS, you can create more efficient and maintainable CSS. Variables, nesting, partials, and mixins are all powerful tools that makes SASS a great choice for maintaining large stylesheets.
-
 
 ### Attendance:
 
