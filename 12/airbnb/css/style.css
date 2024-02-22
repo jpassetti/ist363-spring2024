@@ -1,0 +1,126 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+button {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --airbnb-pink: #ff385c;
+}
+
+body {
+  background-color: #d74100;
+}
+
+header {
+  background-color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+  fill: var(--airbnb-pink);
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  font-family: Arial;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  transition: all 0.25s;
+}
+
+nav a:hover,
+nav a:focus {
+  color: var(--airbnb-pink);
+  text-decoration: underline;
+}
+
+.btn-ui {
+  padding: 1rem;
+  background-color: transparent;
+  border: 1px solid var(--airbnb-pink);
+  cursor: pointer;
+}
+
+.btn-ui svg {
+  width: 2rem;
+  height: auto;
+  fill: var(--airbnb-pink);
+}
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: limegreen;
+  position: fixed;
+  top: 0;
+  left: -100vw;
+  z-index: 1000;
+  transition: all 0.5s;
+}
+
+.overlay.active {
+  left: 0;
+}
+
+.room {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid green;
+}
+
+.room--name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: Arial;
+}
+
+.room--description {
+  font-size: 1rem;
+  font-family: Arial;
+  font-style: italic;
+}
+
+.category {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.category h2 {
+  font-weight: bold;
+  font-family: Arial;
+  font-size: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */
