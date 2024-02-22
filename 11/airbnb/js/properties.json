@@ -1,0 +1,162 @@
+[
+  {
+    "name": "Cozy Cottage by the Lake",
+    "price": 120,
+    "type": "Cottage",
+    "guests": 4,
+    "description": "A charming cottage with stunning views of the lake. Perfect for a relaxing getaway.",
+    "availability": true
+  },
+  {
+    "name": "Urban Loft",
+    "price": 150,
+    "type": "Apartment",
+    "guests": 2,
+    "description": "Stylish loft in the heart of the city, close to major attractions and nightlife.",
+    "availability": false
+  },
+  {
+    "name": "Mountain Retreat",
+    "price": 200,
+    "type": "Cabin",
+    "guests": 6,
+    "description": "Secluded cabin with mountain views, ideal for a peaceful retreat in nature.",
+    "availability": true
+  },
+  {
+    "name": "Beachfront Villa",
+    "price": 250,
+    "type": "Villa",
+    "guests": 8,
+    "description": "Luxurious villa right on the beach, perfect for a sun-filled holiday.",
+    "availability": false
+  },
+  {
+    "name": "Country Farmhouse",
+    "price": 100,
+    "type": "House",
+    "guests": 5,
+    "description": "Traditional farmhouse in the countryside, great for a family vacation.",
+    "availability": true
+  },
+  {
+    "name": "Modern Studio",
+    "price": 80,
+    "type": "Studio",
+    "guests": 2,
+    "description": "Compact and modern studio apartment, ideal for solo travelers or couples.",
+    "availability": true
+  },
+  {
+    "name": "Grand Manor",
+    "price": 300,
+    "type": "House",
+    "guests": 10,
+    "description": "A grand and spacious manor, with plenty of room for large groups or events.",
+    "availability": false
+  },
+  {
+    "name": "Downtown Condo",
+    "price": 130,
+    "type": "Condo",
+    "guests": 3,
+    "description": "Conveniently located condo, with easy access to downtown amenities and transport.",
+    "availability": true
+  },
+  {
+    "name": "Riverside Bungalow",
+    "price": 110,
+    "type": "Bungalow",
+    "guests": 4,
+    "description": "Cozy bungalow by the river, perfect for a tranquil retreat.",
+    "availability": false
+  },
+  {
+    "name": "Penthouse with View",
+    "price": 275,
+    "type": "Apartment",
+    "guests": 4,
+    "description": "Luxurious penthouse with panoramic city views, equipped with all modern amenities.",
+    "availability": true
+  },
+  {
+    "name": "Forest Hideaway",
+    "price": 90,
+    "type": "Cabin",
+    "guests": 2,
+    "description": "Intimate cabin hidden in the forest, ideal for a romantic getaway.",
+    "availability": true
+  },
+  {
+    "name": "Historic Townhouse",
+    "price": 160,
+    "type": "Townhouse",
+    "guests": 6,
+    "description": "Beautifully restored townhouse with a touch of history, located in a quaint neighborhood.",
+    "availability": false
+  },
+  {
+    "name": "Seaside Cottage",
+    "price": 145,
+    "type": "Cottage",
+    "guests": 4,
+    "description": "Bright and airy cottage by the sea, offering stunning sunsets and relaxation.",
+    "availability": true
+  },
+  {
+    "name": "City Center Apartment",
+    "price": 135,
+    "type": "Apartment",
+    "guests": 3,
+    "description": "Modern apartment in the city center, perfect for exploring the city.",
+    "availability": false
+  },
+  {
+    "name": "Mountain View Loft",
+    "price": 180,
+    "type": "Loft",
+    "guests": 4,
+    "description": "Spacious loft with breathtaking mountain views, for a unique stay.",
+    "availability": true
+  },
+  {
+    "name": "Suburban Family Home",
+    "price": 110,
+    "type": "House",
+    "guests": 5,
+    "description": "Comfortable family home in a quiet suburban neighborhood, with a large backyard.",
+    "availability": false
+  },
+  {
+    "name": "Lakeside Studio",
+    "price": 95,
+    "type": "Studio",
+    "guests": 2,
+    "description": "Serene studio overlooking the lake, perfect for writers or artists seeking inspiration.",
+    "availability": true
+  },
+  {
+    "name": "Luxury Downtown Flat",
+    "price": 220,
+    "type": "Apartment",
+    "guests": 4,
+    "description": "High-end apartment in downtown, with top-notch amenities for a luxurious stay.",
+    "availability": false
+  },
+  {
+    "name": "Country B&B",
+    "price": 105,
+    "type": "Bed and Breakfast",
+    "guests": 2,
+    "description": "Cozy bed and breakfast in the countryside, offering a warm and welcoming stay.",
+    "availability": true
+  },
+  {
+    "name": "Tropical Beach House",
+    "price": 260,
+    "type": "House",
+    "guests": 6,
+    "description": "Beach house with tropical surroundings, offering direct beach access and privacy.",
+    "availability": false
+  }
+]
