@@ -49,3 +49,11 @@
 ### 11: [Review filter and learn SASS](11)
 
 - Session 11 (Tue 02/20): We'll review how we used the .filter() method. We'll practice using the filter method with more examples and data. And time permitting, we'll also learn how to use SASS to create variables, nesting, partials and mixins. We'll most likely learn more SASS next class.
+
+### 12: [SASS](12)
+
+- Session 12 (Thu 02/22): We'll learn how to use SASS to create variables, nesting, partials and mixins.
+
+### 12b: [Creative Coding Remixes](12_remixes)
+
+- Homework: Pick another student's project to remix. Try to add new features, refactor the code, and make it your own.
