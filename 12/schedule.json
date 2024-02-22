@@ -1,0 +1,202 @@
+[
+    {
+        "date": "2023-10-27",
+        "opponent": "Deamon",
+        "location": "JMA Wireless Dome",
+        "exhibition": true
+    },
+    {
+        "date": "2023-11-01",
+        "opponent": "College of St. Rose",
+        "location": "JMA Wireless Dome",
+        "exhibition": true
+    },
+    {
+        "date": "2023-11-06",
+        "opponent": "New Hampshire",
+        "location": "JMA Wireless Dome",
+        "exhibition": false
+    },
+    {
+        "date": "2023-11-08",
+        "opponent": "Canisius",
+        "location": "JMA Wireless Dome",
+        "exhibition": false
+    },
+    {
+        "date": "2023-11-14",
+        "opponent": "Colgate",
+        "location": "JMA Wireless Dome",
+        "exhibition": false
+    },
+    {
+        "date": "2023-11-20",
+        "opponent": "Tennessee",
+        "location": "Maui Jim Maui Invitational",
+        "location2": "SimpliFi Arena",
+        "exhibition": false
+    },
+    {
+        "date": "2023-11-21",
+        "opponent": "Maui Jim Maui Invitational",
+        "location": "SimpliFi Arena",
+        "exhibition": false
+    },
+    {
+        "date": "2023-11-22",
+        "opponent": "Maui Jim Maui Invitational",
+        "location": "SimpliFi Arena",
+        "exhibition": false
+    },
+    {
+        "date": "2023-11-23",
+        "opponent": "LSU (ACC/SEC Challenge)",
+        "location": "JMA Wireless Dome",
+        "exhibition": false
+    },
+    {
+        "date": "2023-12-02",
+        "opponent": "Virginia",
+        "location": "John Paul Jones Arena",
+        "exhibition": false
+    },
+    {
+        "date": "2023-12-05",
+        "opponent": "Cornell",
+        "location": "JMA Wireless Dome",
+        "exhibition": false
+    },
+    {
+        "date": "2023-12-09",
+        "opponent": "Georgetown",
+        "location": "Capital One Arena",
+        "exhibition": false
+    },
+    {
+        "date": "2023-12-17",
+        "opponent": "Oregon",
+        "location": "Sioux Falls, S.D.",
+        "location2": "Sanford Pentagon",
+        "exhibition": false
+    },
+    {
+        "date": "2023-12-21",
+        "opponent": "Niagara",
+        "location": "JMA Wireless Dome",
+        "exhibition": false
+    },
+    {
+        "date": "2023-12-30",
+        "opponent": "Pittsburgh",
+        "location": "JMA Wireless Dome",
+        "exhibition": false
+    },
+    {
+        "date": "2024-01-02",
+        "opponent": "Duke",
+        "location": "Cameron Indoor Stadium",
+        "exhibition": false
+    },
+    {
+        "date": "2024-01-10",
+        "opponent": "Boston College",
+        "location": "JMA Wireless Dome",
+        "exhibition": false
+    },
+    {
+        "date": "2024-01-13",
+        "opponent": "North Carolina",
+        "location": "Smith Center",
+        "exhibition": false
+    },
+    {
+        "date": "2024-01-16",
+        "opponent": "Pittsburgh",
+        "location": "Petersen Events Center",
+        "exhibition": false
+    },
+    {
+        "date": "2024-01-20",
+        "opponent": "Miami",
+        "location": "JMA Wireless Dome",
+        "exhibition": false
+    },
+    {
+        "date": "2024-01-23",
+        "opponent": "Florida State",
+        "location": "JMA Wireless Dome",
+        "exhibition": false
+    },
+    {
+        "date": "2024-01-27",
+        "opponent": "NC State",
+        "location": "JMA Wireless Dome",
+        "exhibition": false
+    },
+    {
+        "date": "2024-01-30",
+        "opponent": "Boston College",
+        "location": "Conte Forum",
+        "exhibition": false
+    },
+    {
+        "date": "2024-02-03",
+        "opponent": "Wake Forest",
+        "location": "LJVM Coliseum",
+        "exhibition": false
+    },
+    {
+        "date": "2024-02-07",
+        "opponent": "Louisville",
+        "location": "JMA Wireless Dome",
+        "exhibition": false
+    },
+    {
+        "date": "2024-02-10",
+        "opponent": "Clemson",
+        "location": "JMA Wireless Dome",
+        "exhibition": false
+    },
+    {
+        "date": "2024-02-13",
+        "opponent": "North Carolina",
+        "location": "JMA Wireless Dome",
+        "exhibition": false
+    },
+    {
+        "date": "2024-02-17",
+        "opponent": "Georgia Tech",
+        "location": "McCamish Pavilion",
+        "exhibition": false
+    },
+    {
+        "date": "2024-02-20",
+        "opponent": "NC State",
+        "location": "PNC Arena",
+        "exhibition": false
+    },
+    {
+        "date": "2024-02-24",
+        "opponent": "Notre Dame",
+        "location": "JMA Wireless Dome",
+        "exhibition": false
+    },
+    {
+        "date": "2024-02-27",
+        "opponent": "Virginia Tech",
+        "location": "JMA Wireless Dome",
+        "exhibition": false
+    },
+    {
+        "date": "2024-03-02",
+        "opponent": "Louisville",
+        "location": "KFC Yum! Center",
+        "exhibition": false
+    },
+    {
+        "date": "2024-03-05",
+        "opponent": "Clemson",
+        "location": "Littlejohn Coliseum",
+        "exhibition": false
+    }
+]

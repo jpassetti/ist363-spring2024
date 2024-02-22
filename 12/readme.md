@@ -4,95 +4,13 @@
 
 ### Objectives:
 
-- Review the array filter method
-- Practice using the array filter method
-- Learn how to utilize SASS (time permitting)
+- Learn how to utilize SASS
 
 ### Resources:
 
-- [MDN Web Docs: Array.prototype.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
 - [SASS](https://sass-lang.com/)
-
-
-### JavaScript instructions:
-
-1. Review the array filter property and how it can be used to filter out elements from an array.
-2. Create a new JavaScript file to experiment with and load it into your HTML file.
-3. Complete exercises #1-4 of how to use the array filter method. Please refer to the code and instructions below.
-
-```javascript
-// Exercise #1
-// 1. Create an array of numbers
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
-
-// 2. Use the filter method to include all numbers less than 10
-// 3. Print the result to the console
-// expected result: [1, 2, 3, 4, 5, 6, 7, 8, 9]
-
-// Exercise #2
-// 1. Create an array of objects of people
-const people = [
-  { name: 'John', age: 25 },
-  { name: 'Bill', age: 30 },
-  { name: 'Dave', age: 22 },
-  { name: 'Jill', age: 35 },
-  { name: 'Katie', age: 28 },
-  { name: 'Martha', age: 27 }
-];
-// 2. Use the filter method to include all objects that have a property of 'age' less than 30
-// 3. Print the result to the console
-// expected result: [{ name: 'John', age: 25 }, { name: 'Dave', age: 22 }, { name: 'Katie', age: 28 }, { name: 'Martha', age: 27 }]
-
-
-// Exercise #3
-// 1. Create an array of objects containing Ford and Chevrolet cars
-const cars = [
-  { make: 'Ford', model: 'Fusion', year: 2019 },
-  { make: 'Chevrolet', model: 'Malibu', year: 2018 },
-  { make: 'Ford', model: 'Focus', year: 2017 },
-  { make: 'Chevrolet', model: 'Cruze', year: 2016 },
-  { make: 'Ford', model: 'Taurus', year: 2015 },
-  { make: 'Chevrolet', model: 'Impala', year: 2014 }
-];
-// 2. Use the filter method to include all objects that have a property of 'make' equal to 'Ford'
-// 3. Print the result to the console
-// expected result: [{ make: 'Ford', model: 'Fusion', year: 2019 }, { make: 'Ford', model: 'Focus', year: 2017 }, { make: 'Ford', model: 'Taurus', year: 2015 }]
-
-// Exercise #4
-// 1. Fetch a JSON array of objects containing the SU men's basketball schedule (please download the entire schedule.json file from Blackboard/Content below tonight's agenda)
-
-const schedule = [
-    {
-        "date": "2023-10-27",
-        "opponent": "Deamon",
-        "location": "JMA Wireless Dome",
-        "exhibition": true
-    },
-    {
-        "date": "2023-11-01",
-        "opponent": "College of St. Rose",
-        "location": "JMA Wireless Dome",
-        "exhibition": true
-    },
-    // etc.
-];
-
-// 2. Use the filter method to only include the games in February
-// Big question: How do you evaluate the date property in the filter method to only include games in February? Convert the date string to a Date object and evaluate the month property.
-// 3. Print the result to the console
-
-const februaryGames = schedule.filter(game => {
-    // write your code here
-    const dateObj = new Date(game.date); // convert the date string to a Date object
-    return dateObj.getMonth() === 1; // February is the second month, so the index is 1, January is 0, March is 2, April is 3, etc.
-});
-console.log(februaryGames);
-```
-
-### Conclusion:
-
-- The array filter method is a powerful tool to filter out elements from an array based on a condition.
-- The filter method can be used to filter out elements from an array of objects based on any property or value, including dates.
+- [SASS Guidelines](https://sass-guidelin.es/)
+- [SASS 7-1 Pattern](https://sass-guidelin.es/#the-7-1-pattern)
 
 
 ### SASS instructions:
@@ -126,13 +44,15 @@ sass --version
 
 ### How to use SASS
 
+To use SASS, you need to create a SASS file and compile it into a CSS file. Here's how you can do that:
+
 1. Rename your "css" folder to "sass"
 2. Rename your style.css with the `.scss` extension.
 3. Open a terminal and type the following command to compile your SASS file into a CSS file
+
 ```bash
 sass --watch sass/style.scss:css/style.css
 ```
-
 Translation: "Hey sass, watch the style.scss file in the sass directory and compile it into a style.css file and place it into the css directory".
 
 The watch command syntax requires the input file and the output file. The input file is the SASS file and the output file is the CSS file.
@@ -143,7 +63,44 @@ sass --watch input.scss:output.css
 
 Important: please remember the browser can't read SASS files, so you need to compile your SASS file into a CSS file.
 
-### SASS variables
+### How to run SASS and http-server simultaneously
+
+To run both `http-server` and `SASS` simultaneously in a vanilla JavaScript project, you can utilize a package like `npm-run-all`. This tool allow you to run multiple commands concurrently from the same terminal window. Here's how you can set it up:
+
+1. Install npm-run-all
+```bash
+npm install --save-dev npm-run-all
+```
+
+2. Edit your package JSON file to include the following scripts:
+```json
+"scripts": {
+  "start-server": "http-server .",
+  "watch-sass": "sass --watch sass/style.scss:css/style.css",
+  "start": "npm-run-all --parallel start-server watch-sass"
+}
+```
+
+3. With everything set up, you can now run your project by executing the start script:
+
+```bash
+npm start
+```
+
+Translation: "Hey npm, run the script called start".
+
+In the start script, you talk to npm-run-all. "Hey npm-run-all, run the start-server and watch-sass scripts simultaneously".
+
+With everything set up, let's get into the details of SASS.
+
+### Why use SASS?
+
+1. [Variables](#variables)
+2. [Nesting](#nesting)
+3. [Partials](#partials)
+4. [Mixins](#mixins)
+
+#### Variables
 
 SASS variables are used to store information that you want to reuse throughout your stylesheet. You can store things like colors, fonts, or any CSS value you think you'll want to reuse.
 
@@ -162,7 +119,7 @@ body {
 
 Note: Why use SASS variables and not CSS variables? There is no right or wrong answer, but SASS variables are compiled into CSS and use a simpler syntax. I encourage you to use prefixing for your SASS variables to make them easier to identify. For example, in my opinion `$color__primary` and `$font__primary` are easier to identify than `var(--primary-color)` and `var(--primary-font)`.
 
-### SASS nesting
+#### Nesting
 
 SASS nesting is a way to nest CSS selectors within one another. This is a great way to organize your CSS and make it more readable.
 
@@ -206,7 +163,7 @@ nav {
 }
 ```
 
-### SASS partials
+#### Partials
 
 SASS partials are used to break up your SASS files into smaller, more maintainable files. This is a great way to organize your stylesheets and make them more manageable.
 
@@ -314,7 +271,7 @@ Your style.scss file becomes a table of contents, importing all of the SASS file
 @use 'themes';
 ```
 
-### SASS mixins
+#### Mixins
 
 SASS mixins are used to store a group of CSS declarations that you want to reuse throughout your stylesheet. You can store things like vendor prefixes, animations, or any group of CSS declarations you think you'll want to reuse.
 
@@ -391,4 +348,4 @@ By utilizing SASS, you can create more efficient and maintainable CSS. Variables
 
 ### Attendance:
 
-- Commit your code to your GitHub repository. It will most likely include our filter exercises and just the beginning of your SASS file.
+- Commit your code to your GitHub repository. It will most likely include just the beginning of us learning how to use SASS.
