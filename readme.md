@@ -57,3 +57,7 @@
 ### 12b: [Creative Coding Remixes](12_remixes)
 
 - Homework: Pick another student's project to remix. Try to add new features, refactor the code, and make it your own.
+
+### 13: [SASS](13)
+
+- Session 13 (Tue 02/27): We'll learn how to use SASS to create variables, nesting, partials and mixins.
