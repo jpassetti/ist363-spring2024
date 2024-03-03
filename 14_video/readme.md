@@ -6,6 +6,10 @@
 
 - Utilize SASS partials and mixins
 
+### Watch my video:
+
+- [SASS partials, 7-1 pattern and mixins](https://www.youtube.com/watch?v=Zz6eOVaaelI) 74 min
+
 ### Resources:
 
 - [SASS](https://sass-lang.com/)
