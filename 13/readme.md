@@ -203,7 +203,7 @@ You can import SASS partials into your main SASS file using the `@use` rule. You
 
 Developers and designers use SASS to improve the organization of their stylesheets. Many suggest using the "7-1 pattern" to organize your SASS files.
 
-Read more: [7-1 wpattern](https://sass-guidelin.es/#the-7-1-pattern)
+Read more: [7-1 pattern](https://sass-guidelin.es/#the-7-1-pattern)
 
 ```plaintext
 sass/
