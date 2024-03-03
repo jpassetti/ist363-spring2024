@@ -61,3 +61,11 @@
 ### 13: [SASS](13)
 
 - Session 13 (Tue 02/27): We'll learn how to use SASS to create variables, nesting, partials and mixins.
+
+### 14: [SASS](13)
+
+- Session 14 (Thu 03/01): We'll review and learn more how to use SASS to create variables, nesting, partials and mixins. Please refer to the 13 folder for notes.
+
+### 14b: [Homework video](14_video)
+
+- Homework: I've recorded a tutorial video focusing on the use of SASS partials and mixins. This is designed to provide you with a deeper understanding of how to efficiently organize your SCSS code using the 7-in-1 pattern for partials, as well as how to leverage mixins, with a particular emphasis on creating responsive design elements.

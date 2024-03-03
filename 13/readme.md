@@ -310,11 +310,11 @@ Mixins can write code for you. For example, you can write a mixin that includes 
       @content;
     }
   } @else if $size == "tablet" {
-    @media (min-width: 700px) and (max-width: 1023px) {
+    @media (min-width: 700px) {
       @content;
     }
   } @else if $size == "laptop" {
-    @media (min-width: 1024px) and (max-width: 1139px) {
+    @media (min-width: 1024px) {
       @content;
     }
   } @else if $size == "desktop" {
