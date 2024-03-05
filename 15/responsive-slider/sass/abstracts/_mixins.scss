@@ -1,0 +1,27 @@
+@use "./vars";
+
+@mixin fontProperties($font, $size, $weight, $color) {
+  font-family: $font;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+@mixin breakpoint($size) {
+  @if $size == "phone" {
+    @media (max-width: 699px) {
+      @content;
+    }
+  } @else if $size == "tablet" {
+    @media (min-width: vars.$breakpoint__tablet) {
+      @content;
+    }
+  } @else if $size == "laptop" {
+    @media (min-width: vars.$breakpoint__laptop) {
+      @content;
+    }
+  } @else if $size == "desktop" {
+    @media (min-width: vars.$breakpoint__desktop) {
+      @content;
+    }
+  }
+}

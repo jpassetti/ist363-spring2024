@@ -1,0 +1,36 @@
+@use "../abstracts/mixins";
+@use "../abstracts/vars";
+
+.slider {
+  background-color: limegreen;
+  padding: 1rem 0;
+  display: block;
+  width: 100%;
+  &__container {
+    background-color: pink;
+    height: 300px;
+    overflow-x: scroll;
+    padding-left: 1rem;
+    @include mixins.breakpoint(tablet) {
+      padding-left: calc((100% - vars.$breakpoint__tablet) / 2);
+    }
+    @include mixins.breakpoint(laptop) {
+      padding-left: calc((100% - vars.$breakpoint__laptop) / 2);
+    }
+    @include mixins.breakpoint(desktop) {
+      padding-left: calc((100% - vars.$breakpoint__desktop) / 2);
+    }
+  }
+  &__grid {
+    display: grid;
+    grid-auto-flow: column; /* Make grid items flow horizontally */
+    grid-template-columns: repeat(auto-fill, 300px);
+    gap: 1rem;
+  }
+  &__item {
+    width: 300px;
+    background-color: white;
+    padding: 1rem;
+    height: 300px;
+  }
+}

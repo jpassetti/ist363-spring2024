@@ -69,3 +69,8 @@
 ### 14b: [Homework video](14_video)
 
 - Homework: I've recorded a tutorial video focusing on the use of SASS partials and mixins. This is designed to provide you with a deeper understanding of how to efficiently organize your SCSS code using the 7-in-1 pattern for partials, as well as how to leverage mixins, with a particular emphasis on creating responsive design elements.
+
+### 15: [BEM](15)
+
+- Session 15 (Tue 03/05): We'll learn how to use BEM (Block Element Modifier) to create a more maintainable and scalable CSS architecture. And time permitting, we'll learn how to use 
+HTML, CSS/SCSS and BEM to create a responsive slider for our Airbnb project.
