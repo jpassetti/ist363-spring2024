@@ -1,0 +1,21 @@
+@use "../abstracts/mixins";
+@use "../abstracts/vars";
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  background-color: yellow;
+  @include mixins.breakpoint(tablet) {
+    width: vars.$breakpoint__tablet;
+    // background-color: orange;
+  }
+  @include mixins.breakpoint(laptop) {
+    width: vars.$breakpoint__laptop;
+    // background-color: red;
+  }
+  @include mixins.breakpoint(desktop) {
+    width: vars.$breakpoint__desktop;
+    //background-color: violet;
+  }
+}
