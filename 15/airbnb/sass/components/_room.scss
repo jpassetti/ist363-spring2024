@@ -1,0 +1,15 @@
+.room {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid green;
+  &--name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Arial;
+  }
+  &--description {
+    font-size: 1rem;
+    font-family: Arial;
+    font-style: italic;
+  }
+}

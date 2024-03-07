@@ -1,0 +1,40 @@
+@use '../abstracts/vars';
+
+.btn {
+  background-color: gray;
+  color: white;
+  padding: 1rem;
+  font-family: vars.$font__primary;
+  font-size: 1rem;
+  font-weight: bold;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  &--primary {
+    background-color: vars.$color__primary;
+  }
+  &--secondary {
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+  }
+  &--delete {
+    background-color: red;
+  }
+  &--small {
+    font-size: 0.8rem;
+    padding: 0.25rem 0.5rem;
+  }
+}
+
+.btn-ui {
+  padding: 1rem;
+  background-color: transparent;
+  border: 1px solid vars.$color__primary;
+  cursor: pointer;
+  svg {
+    width: 2rem;
+    height: auto;
+    fill: vars.$color__primary;
+  }
+}
