@@ -74,3 +74,11 @@
 
 - Session 15 (Tue 03/05): We'll learn how to use BEM (Block Element Modifier) to create a more maintainable and scalable CSS architecture. And time permitting, we'll learn how to use 
 HTML, CSS/SCSS and BEM to create a responsive slider for our Airbnb project.
+
+### 16: [Responsive slider](16)
+
+- Session 16 (Thu 03/07): We'll learn how to use HTML, CSS/SCSS and BEM to create a responsive slider for our Airbnb project.
+
+### 18: [React](18)
+
+- Session 18 (Thu 03/21): We'll learn how to use React to create a button component and a homepage component. We'll also learn how to style components using SASS and how to create a header component.
