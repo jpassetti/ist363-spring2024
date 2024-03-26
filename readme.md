@@ -82,3 +82,7 @@ HTML, CSS/SCSS and BEM to create a responsive slider for our Airbnb project.
 ### 18: [React](18)
 
 - Session 18 (Thu 03/21): We'll learn how to use React to create a button component and a homepage component. We'll also learn how to style components using SASS and how to create a header component.
+
+### 19: [React: State](19)
+
+- Session 19 (Tue 03/26): We'll learn how to use the `useState` hook in React to manage state in functional components. We'll create a counter component and a toggle component to demonstrate how state can be used to update the UI.
