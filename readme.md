@@ -86,3 +86,7 @@ HTML, CSS/SCSS and BEM to create a responsive slider for our Airbnb project.
 ### 19: [React: State](19)
 
 - Session 19 (Tue 03/26): We'll learn how to use the `useState` hook in React to manage state in functional components. We'll create a counter component and a toggle component to demonstrate how state can be used to update the UI.
+
+### 22: [Weather API](22)
+
+- Session 22 (Thu 04/04): We'll learn how to use the OpenWeatherMap API to fetch weather data and display it in our React app. We'll also learn how to use the `useEffect` hook to fetch data when the component mounts.
