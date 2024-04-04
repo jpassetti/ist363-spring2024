@@ -37,11 +37,11 @@ This will start the development server and you can access your project at [http:
 
 ## Postman
 
-Postman is a popular API client that allows you to test APIs. You can use Postman to test the OpenWeatherMap API before integrating it into your project.
+[Postman](https://www.postman.com/downloads/) is a popular API client that allows you to test APIs. You can use Postman to test the OpenWeatherMap API before integrating it into your project.
 
-To test the OpenWeatherMap API, you will need to create a new request in Postman. You can do this by following these steps:
+To test the OpenWeatherMap API, download the app, and then you will need to create a new request inside the app. You can do this by following these steps:
 
-1. Open Postman
+1. Download and open Postman
 2. Click on the `+` button to create a new request
 3. Enter a name for the request
 4. Enter the URL for the OpenWeatherMap API:
