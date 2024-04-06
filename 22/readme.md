@@ -164,7 +164,149 @@ const Homepage = () => {
 ```
 
 
+# Part 2
 
+Instead of hardcoding the zip code, we will get the user's location and use that to get the weather data.
+
+In `app/page.js`, we will set up a useEffect hook to get the user's location when the component is mounted.
+
+```javascript
+useEffect(() => {
+  getGeolocation().then().catch();
+}, []);
+```
+
+Translation: "When the component is mounted, use the custom function `getGeolocation` to get the user's location, then do something with the data. If there is an error, catch it."
+
+## Geolocation API
+
+The Geolocation API provides access to the geographical location of the user. It allows you to get the latitude and longitude of the user's device.
+
+In order to use the Geolocation API, you need to get the user's permission to access their location. You can do this by calling the `navigator.geolocation.getCurrentPosition()` method.
+
+## How do we get the user's location?
+
+We will be using the `navigator.geolocation.getCurrentPosition()` method in the `lib/api.js` file to get the user's location.
+
+# JavaScript Promises
+
+As we get the geolocation data, we will utilize JavaScript promises to handle the asynchronous nature of the `getCurrentPosition()` method.
+
+A promise is an object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
+
+A promise has three states: pending, fulfilled, and rejected. When the promise is created, it is in the pending state. When the asynchronous operation is complete, the promise is either fulfilled or rejected.
+
+Translation: As an abstract example, imagine you order a pizza, and the waiter promises to bring it to your table as soon as it's ready. This situation is similar to how Promises work in JavaScript. 
+
+```javascript
+// order the pizza
+export const getGeolocation = () => {
+  // default state is pending
+  return new Promise();
+};
+```
+
+A promise expects two arguments: resolve and reject, which are functions that you call to fulfill or reject the promise.
+
+```javascript
+// order the pizza
+export const getGeolocation = () => {
+  // handle whether the pizza is ready or not
+  // insert a function with resolve and reject arguments
+  return new Promise((resolve, reject) => {});
+};
+```
+
+If the pizza is ready, you call the `resolve()` function to fulfill the promise. If the pizza is not ready, you call the `reject()` function to reject the promise.
+
+For us, it will be if we get the geolocation data, we will resolve the promise. If we don't get the geolocation data, we will reject the promise.
+
+```javascript
+// order the pizza
+export const getGeolocation = () => {
+  // handle whether the pizza is ready or not
+  // A promise expects two arguments: resolve and reject, which are functions that you call to fulfill or reject the promise.
+  return new Promise((resolve, reject) => {
+    // if the pizza is ready, resolve the promise
+   if () {
+     resolve();
+   } else {
+     // if the pizza is not ready, reject the promise
+     reject();
+   }
+  });
+};
+```
+
+We need to check if geoLocation is available in the browser. If it is, we will call the `getCurrentPosition()` method to get the user's location.
+
+```javascript
+// order the pizza
+export const getGeolocation = () => {
+  // handle whether the pizza is ready or not
+  // A promise expects two arguments: resolve and reject, which are functions that you call to fulfill or reject the promise.
+  return new Promise((resolve, reject) => {
+    // if the pizza is ready, resolve the promise
+   if ("geolocation" in navigator) {
+    // Yes, the browser supports geolocation! Keep going!
+     //resolve();
+   } else {
+     // if the pizza is not ready, reject the promise
+     reject("Geolocation is not available in your browser");
+   }
+  });
+};
+```
+
+## getCurrentPosition()
+
+The `getCurrentPosition()` method is used to get the current position of the device. It takes two arguments: a success callback and an error callback.
+
+```javascript
+// order the pizza
+export const getGeolocation = () => {
+  // handle whether the pizza is ready or not
+  // A promise expects two arguments: resolve and reject, which are functions that you call to fulfill or reject the promise.
+  return new Promise((resolve, reject) => {
+    // if the pizza is ready, resolve the promise
+   if ("geolocation" in navigator) {
+    // Yes, the browser supports geolocation! Keep going!
+    // it needs two functions: success and error
+     navigator.geolocation.getCurrentPosition(() => {}, () => {});
+
+     //resolve();
+   } else {
+     // if the pizza is not ready, reject the promise
+     reject("Geolocation is not available in your browser");
+   }
+  });
+};
+```
+
+The first function is the success callback, which is called when the position is successfully retrieved. The second function is the error callback, which is called when an error occurs.
+
+```javascript
+// order the pizza
+export const getGeolocation = () => {
+  // handle whether the pizza is ready or not
+  // A promise expects two arguments: resolve and reject, which are functions that you call to fulfill or reject the promise.
+  return new Promise((resolve, reject) => {
+    // if the pizza is ready, resolve the promise
+   if ("geolocation" in navigator) {
+    // Yes, the browser supports geolocation! Keep going!
+    // it needs two functions: success and error
+     navigator.geolocation.getCurrentPosition((position) => {
+        resolve(position);
+     }, () => {
+        reject("User denied geolocation");
+     });
+   } else {
+     // if the pizza is not ready, reject the promise
+     reject("Geolocation is not available in your browser");
+   }
+  });
+};
+```
 
 
 
