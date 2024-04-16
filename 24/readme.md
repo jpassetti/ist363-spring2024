@@ -20,17 +20,17 @@ In this exercise, you will learn how to use conditional styling in React. Condit
 
 We don't want to have this:
 
-    ```js
-    <div className={`defaultClass ${isPrimary ? 'primaryClass' : 'secondaryClass'}`}>
-    ```
+```jsx
+<div className={`defaultClass ${isPrimary ? 'primaryClass' : 'secondaryClass'}`}>
+```
 
 Don't load up the `className` attribute with a bunch of ternary operators.
 
 We want to have this:
 
-    ```jsx
-    <div className={divClasses}>
-    ```
+```jsx
+<div className={divClasses}>
+```
 
 Where `divClasses` is a string that is either `'primary'` or `'secondary'` based on the value of `isPrimary`.
 
