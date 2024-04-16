@@ -97,9 +97,6 @@ const Header = () => (
 );
 export default Header;
 ```
-
-````
-
 ### Definition
 
 ```jsx
@@ -112,7 +109,7 @@ const Container = ({ children }) => (
     </div>
 );
 export default Container;
-````
+```
 
 ### Children prop
 
