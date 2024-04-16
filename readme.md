@@ -89,4 +89,8 @@ HTML, CSS/SCSS and BEM to create a responsive slider for our Airbnb project.
 
 ### 22: [Weather API](22)
 
-- Session 22 (Thu 04/04): We'll learn how to use the OpenWeatherMap API to fetch weather data and display it in our React app. We'll also learn how to use the `useEffect` hook to fetch data when the component mounts.
+- Session 22 (Tues 04/02): We'll learn how to use the OpenWeatherMap API to fetch weather data and display it in our React app. We'll also learn how to use the `useEffect` hook to fetch data when the component mounts.
+
+### 24: [Conditional Styling](24)
+
+- Session 24 (Tue 04/09): We'll learn how to use conditional styling in React to change the appearance of a component based on its state. We'll utilize the `className` attribute to conditionally apply CSS classes to a component. And we'll power the utility classes with SASS mixins.
