@@ -20,7 +20,7 @@ In this exercise, you will learn how to use conditional styling in React. Condit
 
 We don't want to have this:
 
-    ```jsx
+    ```js
     <div className={`defaultClass ${isPrimary ? 'primaryClass' : 'secondaryClass'}`}>
     ```
 
