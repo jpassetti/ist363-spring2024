@@ -24,7 +24,7 @@ The web application must be:
 
 In this video, we will set up the environment for the final project. We will create a new Next.js application and install the necessary dependencies.
 
-[Video 1: Environment setup](https://youtu.be/1Q1Q1Q1Q1Q1)
+[Video 1: Environment setup](https://www.youtube.com)
 
 - Create a new Next.js application
 - Install the necessary dependencies (sass, classnames)
