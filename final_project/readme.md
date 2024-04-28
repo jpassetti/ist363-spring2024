@@ -60,7 +60,7 @@ cd nextjs-ist363-spotify
 
 ### Install the necessary dependencies
 
-The final project will use SASS to style the application. We will also use the `classnames` package to conditionally apply classes to elements.
+The final project will use `sass` to style the application. We will also use the `classnames` package to conditionally apply classes to elements.
 
 ```bash
 npm install sass classnames
@@ -79,6 +79,7 @@ The `global.scss` file will use the almost 7-in-1 pattern. This pattern is a sim
 ```scss
 @use './vendor';
 @use './base';
+```
 
 #### Vendor
 
@@ -100,9 +101,9 @@ Create a `_normalize.scss` file in the `sass/vendor` directory. Google "normaliz
 
 The `base` directory will contain the base styles for the project. This includes a custom reset, imported fonts, and global styles (as needed).
 
+#### _reset.scss
+
 ```scss
-// _reset.scss
-// Custom reset styles
 h1, h2, h3, h4, h5, h6, p, ul, li {
   margin: 0;
   padding: 0;
@@ -117,18 +118,28 @@ img {
 * {
   box-sizing: border-box; // Invert padding. CSS now includes padding and border in element width
 }
+```
 
-// _fonts.scss
+#### _fonts.scss
+
+```scss
 // Import fonts from Google Fonts
 // I will walk you through this in a video. For now, just create the file.
+```
 
-// _base.scss
-// Global styles for the project
+#### _base.scss
+
+```scss
+// Global styles for the project (as needed)
 body {
   background-color: black;
   color: white;
 }
+```
 
+#### local index.scss
+
+```scss
 // base/index.scss
 // Bring all of the partials together
 @use './reset';
