@@ -200,4 +200,10 @@ Go to your Verce account and click the "New Project" button. Select the reposito
 
 After a few moments, the project will be live at the URL provided by Vercel.
 
+### Conclusion
+
+In this video, we set up the environment for the final project. We created a new Next.js application, installed the necessary dependencies, reset the CSS, added a global stylesheet, created a new repository on GitHub, and deployed the project to Vercel. 
+
+If it's all working, you're ready to move on to the next video. If not, please review the steps and make sure you have completed each one and contact me if you need support.
+
 
