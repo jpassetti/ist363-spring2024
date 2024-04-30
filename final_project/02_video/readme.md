@@ -2,7 +2,7 @@
 
 This video will walk you through the process of setting up the Spotify API. We will create a Spotify Developer account, create a new application, and generate the necessary credentials to access the Spotify API.
 
-[Video 2: Spotify API](https://youtu.be/1J9Q6J9Q6J9)
+[Video 2: Spotify API](https://youtu.be/Ud7tuNZpYW4)
 
 ## Overview
 
