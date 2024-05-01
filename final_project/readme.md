@@ -24,6 +24,7 @@ The web application must be:
 
 - [Configure Environment](./01_video/)
 - [Spotify API](./02_video/)
+- [Preliminary CSS](./03_video/)
 
 ## Due date
 
