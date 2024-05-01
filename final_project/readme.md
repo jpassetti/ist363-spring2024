@@ -22,9 +22,9 @@ The web application must be:
 
 ## Videos
 
-- [Configure Environment](./01_video/)
-- [Spotify API](./02_video/)
-- [Preliminary CSS](./03_video/)
+- [01. Configure Environment](./01_video/)
+- [02. Spotify API](./02_video/)
+- [03. Preliminary CSS](./03_video/)
 
 ## Due date
 
